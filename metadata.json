@@ -1,0 +1,6 @@
+{
+  "name": "Özyeşil Kozmetik",
+  "description": "Özyeşil Kozmetik Silopi Fiziksel Mağaza E-Ticaret Vitrini - Orijinal Cilt Bakım, Makyaj, Parfüm ve Saç Bakım Ürünleri",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

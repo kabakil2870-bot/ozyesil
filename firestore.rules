@@ -1,0 +1,17 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Read-only public access to products collection
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if request.auth != null; // Only authenticated admins can create/edit products
+    }
+    
+    // Default fallback rule
+    match /{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
